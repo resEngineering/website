@@ -7,6 +7,17 @@ export default function Home() {
             <div className='w-full h-auto relative'>
                 <img src={stockImage} className="w-full h-auto object-contain" alt="Stock Image" />
 
+                <div className='sm:hidden w-full h-[250px] flex flex-col items-center justify-center'>
+                    <div className='w-full h-[200px] bg-blue-950 text-white'>
+                        <span className='ml-4 text-2xl sm:text-4xl xl:text-6xl opacity-100 font-sans flex flex-col h-full w-full justify-center items-start'>
+                            Providing<br />
+                            <div><span className='text-orange-600'>Efficient</span> & <span className='text-orange-600'>Reliable</span></div>
+                            <div><span className='text-orange-600'>Structural</span> and <span className='text-orange-600'>Civil Engineering</span></div>
+                            Services
+                        </span>
+                    </div>
+                </div>
+
                 {/* Desktop Content */}
                 <div className='hidden sm:flex absolute top-[25%] right-0 w-[50%] h-[30%] bg-white rounded-xl items-center text-blue-950'>
                     <span className='mx-6 sm:text-4xl xl:text-6xl opacity-100 font-sans flex flex-col h-full w-full justify-center items-start'>
