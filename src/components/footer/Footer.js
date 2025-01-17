@@ -9,10 +9,10 @@ export default function Footer() {
                 <img src={LogoDesktop} className='h-[50px] sm:h-[50px] md:h-[75px] w-auto' />
             </div>
             <div className='flex flex-row flex-1 items-center justify-center space-x-2 sm:space-x-4'>
-                <a target='_blank' href='https://www.google.com'>
+                <a target='_blank' href='https://www.instagram.com'>
                     <FaInstagram size={30} className='text-blue-950 hover:cursor-pointer' />
                 </a>
-                <a target='_blank' href='https://www.google.com'>
+                <a target='_blank' href='https://www.linkedin.com/company/resilience-engineering-construction-management/'>
                     <FaLinkedin size={30} className='text-blue-950 hover:cursor-pointer' />
                 </a>
             </div>
