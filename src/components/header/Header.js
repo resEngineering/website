@@ -33,7 +33,7 @@ export default function Header({ tab, setSelectedTab }) {
                     {/* Menu Options */}
                     <div className='min-h-[70%]'>
                         {
-                            ['Home', 'About', 'Services', 'Contact'].map(option => {
+                            ['Home', 'About', 'Contact'].map(option => {
                                 return (
                                     <div className='w-full h-20 flex flex-row items-end justify-start text-xl border-b-2 border-solid' onClick={
                                         () => {
@@ -52,12 +52,12 @@ export default function Header({ tab, setSelectedTab }) {
                 {/* Web Components */}
                 <div className='hidden sm:flex flex-1 w-full h-full flex-row items-center justify-center gap-8'>
                     {
-                        ['Home', 'About', 'Services', 'Contact'].map(page => {
+                        ['Home', 'About', 'Contact'].map(page => {
                             return (
                                 <a className={`flex hover:cursor-pointer h-8 w-16 md:w-20 text-center items-center justify-center rounded-lg ${tab === page ? 'bg-gray-300 text-zinc-950' : ' '}`}
                                     onClick={
                                         () => {
-                                            setSelectedTab(page)
+                                            setSelectedTab(page);
                                         }
                                     }>{page}
                                 </a>
