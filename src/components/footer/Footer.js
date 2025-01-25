@@ -1,6 +1,6 @@
 import React from 'react'
 import LogoDesktop from "../../images/Logo-Desktop.jpg"
-import { FaInstagram, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
+import { FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 export default function Footer() {

@@ -8,7 +8,7 @@ export default function Header({ tab, setSelectedTab }) {
     const [showMenu, setShowMenu] = useState(false);
 
     return (
-        <div className='flex h-[12lvh] sm:h-[75px] md:h-[125px] flex-row w-full items-center justify-center'>
+        <div className='flex h-[12lvh] sm:h-[75px] md:h-[125px] flex-row w-full items-center justify-center shadow-md shadow-blue-950'>
             <div className='flex-1 flex flex-grow items-center justify-center text-nowrap ml-2 sm:ml-4 sm:font-bold sm:text-xl'>
                 <img src={LogoDesktop} className='h-full w-auto sm:hidden' />
                 <img src={LogoDesktop} className='hidden sm:block sm:h-[75px] md:h-[100px] w-auto' />
