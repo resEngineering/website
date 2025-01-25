@@ -24,20 +24,20 @@ export default function Contact() {
                     <div className='w-full h-full bg-blue-950 rounded-2xl pt-4'>
                         <div className='w-full h-[100px] sm:h-[100px] flex items-center justify-around'>
                             <div className='flex flex-row items-start justify-center'>
-                                <h1 className='text-white'>First Name{"\t"}</h1>
+                                <h1 className='text-white'>First Name</h1>
                             </div>
 
                             <input className='w-48 sm:w-64 h-10 rounded-lg' />
                         </div>
                         <div className='w-full h-[100px] flex items-center justify-around'>
                             <div className='flex flex-row items-start justify-center'>
-                                <h1 className='text-white'>Last Name{"\t"}</h1>
+                                <h1 className='text-white'>Last Name</h1>
                             </div>
                             <input className='w-48 sm:w-64 h-10 rounded-lg' />
                         </div>
                         <div className='w-full h-[100px] flex items-center justify-around'>
                             <div className='flex flex-row items-start justify-center'>
-                                <h1 className='text-white'>Email{"\t"}</h1>
+                                <h1 className='text-white'>Email</h1>
                             </div>
                             <input className='w-48 sm:w-64 h-10 rounded-lg' />
                         </div>
