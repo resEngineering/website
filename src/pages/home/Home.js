@@ -31,7 +31,7 @@ export default function Home() {
             <div className='w-full h-[450px] sm:h-[300px] flex flex-col items-center justify-center space-y-2'>
                 <span className='text-2xl font-bold text-blue-950'>WHO WE ARE</span>
                 <span className='text-center mx-6 sm:mx-20'>
-                    Resilience Engineering and Construction Management provides leading structural engineering, façade consulting, integrated design and detailing, forensic, and construction consulting services for all types of buildings. Known for the highest quality of service, the firm provides each client with personal, dedicated, and inspiring engineering services.
+                    Resilience Engineering and Construction Management provides leading structural engineering, facade consulting, integrated design and detailing, forensic, and construction consulting services for all types of buildings. Known for the highest quality of service, the firm provides each client with personal, dedicated, and inspiring engineering services.
                 </span>
             </div>
         </div>

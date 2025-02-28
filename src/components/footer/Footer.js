@@ -13,8 +13,8 @@ export default function Footer() {
                 <a className='flex flex-row w-36 h-10 rounded-lg text-white bg-blue-950 text-center content-center items-center justify-evenly' href='tel:407-927-1480'>
                     <FaPhoneAlt size={15} /> 407-927-1480
                 </a>
-                <a className='flex flex-row w-[230px] sm:w-[260px] px-2 h-10 rounded-lg text-white bg-blue-950 text-center content-center items-center justify-evenly sm:text-base text-sm' href='mailto:Resilienceengineer@gmail.com'>
-                    <MdEmail size={15} /> Resilienceengineer@gmail.com
+                <a className='flex flex-row w-[230px] sm:w-[260px] px-2 h-10 rounded-lg text-white bg-blue-950 text-center content-center items-center justify-evenly sm:text-base text-sm' href='mailto:Andy@resilienceENG.com'>
+                    <MdEmail size={15} /> Andy@resilienceENG.com
                 </a>
             </div>
             <div className='flex flex-col sm:flex-row flex-1 flex-shrink w-full h-full items-center justify-evenly'>
