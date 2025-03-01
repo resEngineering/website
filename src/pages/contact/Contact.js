@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { MdEmail } from "react-icons/md";
 import emailjs from "@emailjs/browser"
 import { FaLinkedin, FaPhoneAlt } from "react-icons/fa";
@@ -44,36 +44,42 @@ export default function Contact() {
 
                 </div>
                 <div className='flex h-[600px] sm:h-[600px] flex-none sm:flex-1 flex-row p-2'>
-                    <div className='w-full h-full bg-blue-950 rounded-2xl pt-4'>
-                        <div className='w-full h-[100px] sm:h-[100px] flex items-center justify-around'>
-                            <div className='flex flex-row items-start justify-center'>
-                                <h1 className='text-white'>First Name</h1>
-                            </div>
+                    {(!formSubmitted) ?
+                        <div className='w-full h-full bg-blue-950 rounded-2xl pt-4'>
+                            <div className='w-full h-[100px] sm:h-[100px] flex items-center justify-around'>
+                                <div className='flex flex-row items-start justify-center'>
+                                    <h1 className='text-white'>First Name</h1>
+                                </div>
 
-                            <input className='w-48 sm:w-64 h-10 rounded-lg' onChange={(e) => { setFirstName(e.target.value) }}/>
-                        </div>
-                        <div className='w-full h-[100px] flex items-center justify-around'>
-                            <div className='flex flex-row items-start justify-center'>
-                                <h1 className='text-white'>Last Name</h1>
+                                <input className='w-48 sm:w-64 h-10 rounded-lg' onChange={(e) => { setFirstName(e.target.value) }} />
                             </div>
-                            <input className='w-48 sm:w-64 h-10 rounded-lg' onChange={(e) => { setLastName(e.target.value) }}/>
-                        </div>
-                        <div className='w-full h-[100px] flex items-center justify-around'>
-                            <div className='flex flex-row items-start justify-center'>
-                                <h1 className='text-white'>Email</h1>
+                            <div className='w-full h-[100px] flex items-center justify-around'>
+                                <div className='flex flex-row items-start justify-center'>
+                                    <h1 className='text-white'>Last Name</h1>
+                                </div>
+                                <input className='w-48 sm:w-64 h-10 rounded-lg' onChange={(e) => { setLastName(e.target.value) }} />
                             </div>
-                            <input className='w-48 sm:w-64 h-10 rounded-lg' onChange={(e) => { setEmail(e.target.value) }}/>
+                            <div className='w-full h-[100px] flex items-center justify-around'>
+                                <div className='flex flex-row items-start justify-center'>
+                                    <h1 className='text-white'>Email</h1>
+                                </div>
+                                <input className='w-48 sm:w-64 h-10 rounded-lg' onChange={(e) => { setEmail(e.target.value) }} />
+                            </div>
+                            <div className='w-full h-[150px] flex flex-col sm:flex-row items-center justify-around'>
+                                <h1 className='text-white w-full mb-2 sm:mb-0 sm:w-auto ml-10 sm:ml-0'>Project Summary</h1>
+                                <textarea className='w-64 h-[100px] rounded-lg' onChange={(e) => { setSummary(e.target.value) }} />
+                            </div>
+                            <div className='w-full h-[100px] flex items-center justify-center'>
+                                <button className={`flex flex-row w-36 h-10 rounded-lg text-white bg-orange-600 text-center content-center items-center justify-evenly active:opacity-90 ${!(firstName && lastName && email && summary && EMAIL_REGEX.test(email)) ? 'hover:cursor-not-allowed opacity-50' : 'hover:cursor-pointer'}`} disabled={!(firstName && lastName && email && summary && EMAIL_REGEX.test(email))} onClick={handleSubmit}>
+                                    Submit
+                                </button>
+                            </div>
                         </div>
-                        <div className='w-full h-[150px] flex flex-col sm:flex-row items-center justify-around'>
-                            <h1 className='text-white w-full mb-2 sm:mb-0 sm:w-auto ml-10 sm:ml-0'>Project Summary</h1>
-                            <textarea className='w-64 h-[100px] rounded-lg' onChange={(e) => { setSummary(e.target.value) }}/>
+                        :
+                        <div className='w-full h-full bg-blue-950 rounded-2xl pt-4 flex items-center justify-center text-white text-wrap'>
+                            <span className='mx-4'>Your form has been submitted and we will reach back out to you soon.</span>
                         </div>
-                        <div className='w-full h-[100px] flex items-center justify-center'>
-                            <button className={`flex flex-row w-36 h-10 rounded-lg text-white bg-orange-600 text-center content-center items-center justify-evenly active:opacity-90 ${!(firstName && lastName && email && summary && EMAIL_REGEX.test(email)) ? 'hover:cursor-not-allowed opacity-50' : 'hover:cursor-pointer'}`} disabled={!(firstName && lastName && email && summary && EMAIL_REGEX.test(email))} onClick={handleSubmit}>
-                                Submit
-                            </button>
-                        </div>
-                    </div>
+                    }
                 </div>
             </div>
         </div>
